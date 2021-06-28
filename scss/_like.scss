@@ -1,0 +1,13 @@
+.like-btn {
+    position: absolute;
+    background-image: url('../img/unliked.svg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.like-active {
+    background-image: url('../img/liked.svg');
+}

@@ -1,0 +1,113 @@
+.cards {
+    padding-bottom: 100px;
+    &__container {
+        min-height: calc(100vh - 280px);
+    }
+}
+
+.card {
+    margin-bottom: 8px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: (0 2px 3px rgba(0,0,0,.1));
+
+    &__image-wrapper {
+        position: relative;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 132px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text-area {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+    }
+
+    &__title {
+        font-size: 18px;
+        padding-right: 10px;
+    }
+
+    &__price {
+        font-size: 22px;
+    }
+}
+
+.image-matcha {
+    background-image: url('../img/matcha.jpeg');
+}
+.image-chocolate {
+    background-image: url('../img/chocolate.jpeg');
+}
+.image-rosamalina {
+    background-image: url('../img/kruassan-rosa-malina-w.jpeg');
+}
+.image-kokos {
+    background-image: url('../img/croissant-coconut-w.jpeg');
+}
+.image-ponchikKokos {
+    background-image: url('../img/ponchik-s-kokosom-w.jpeg');
+}
+.image-ponchikMatcha {
+    background-image: url('../img/ponchik-matcha-w.jpeg')
+}
+.image-ponchikVishnia {
+    background-image: url('../img/ponchik-s-vishney-w.jpeg');
+}
+.image-ponchikCream {
+    background-image: url('../img/ponchik-s-kremom-w.jpeg');
+}
+.image-ponchik {
+    background-image: url('../img/ponchik-w.jpeg');
+}
+
+
+.image {
+
+   &__like {
+       position: relative;
+       margin-top: 6px;
+       margin-left: 6px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       background-color: #f2f2f2;
+       width: 32px;
+       height: 32px;
+       border-radius: 50%;
+   }
+
+   &__labels {
+       display: flex;
+       justify-content: space-between;
+       align-items: flex-start;
+       font-size: 11px;
+       letter-spacing: .3px;
+       text-transform: uppercase;
+   }
+
+   &__label {
+       padding: 6px;
+       background-color: #eeeeee;
+
+       &:not(:last-child) {
+            margin-right: 4px;
+       }
+
+       &-time {
+            border-top-right-radius: 10px;
+        }
+       &-category {
+            border-bottom-left-radius: 10px;
+        }
+   }
+}
+
+

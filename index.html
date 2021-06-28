@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/styles.css">
+    <title>ТЕСТО</title>
+</head>
+<body>
+    <div class="site-container">
+        
+        <header class="header">
+            <div class="container header__container">
+                <button class="burger btn-reset header__burger">
+                    <span class="burger__line burger__line--1"></span>
+                    <span class="burger__line burger__line--2"></span>
+                    <span class="burger__line burger__line--3"></span>
+                </button>
+                <div class="logo">
+                    <a href="" class="logo header__logo">Тесто</a>
+                    <span class="header__descr">Заведение не выбрано</span>
+                </div>
+                <form class="search-form" action="">
+                    <button class="search-form__btn btn-reset"></button>
+                </form>
+            </div>
+        </header>
+        
+
+        <div class="sticky-tabs">
+            <ul class="tabs__nav tabs-nav">
+                <li class="tabs-nav__item is-active">
+                    <div class="tab-nav">
+                        <div class="tab-nav__image tab-nav__image-pop"></div>
+                    </div>
+                    <h4 class="tab-nav__title">Популярное</h4>
+                </li>
+                <li class="tabs-nav__item">
+                    <div class="tab-nav">
+                        <div class="tab-nav__image tab-nav__image-fav"></div>
+                    </div>
+                    <h4 class="tab-nav__title">Избранное</h4>
+                </li>
+                <li class="tabs-nav__item">
+                    <div class="tab-nav">
+                        <div class="tab-nav__image tab-nav__image-gifts"></div>
+                    </div>
+                    <h4 class="tab-nav__title">Подарки</h4>
+                </li>
+                <li class="tabs-nav__item">
+                    <div class="tab-nav">
+                        <div class="tab-nav__image tab-nav__image-breakf"></div>
+                    </div>
+                    <h4 class="tab-nav__title">Завтраки</h4>
+                </li>
+                <li class="tabs-nav__item">
+                    <div class="tab-nav">
+                        <div class="tab-nav__image tab-nav__image-bakery"></div>
+                    </div>
+                    <h4 class="tab-nav__title">Выпечка</h4>
+                </li>
+                <li class="tabs-nav__item">
+                    <div class="tab-nav">
+                        <div class="tab-nav__image tab-nav__image-salads"></div>
+                    </div>
+                    <h4 class="tab-nav__title">Салаты</h4>
+                </li>
+                <li class="tabs-nav__item">
+                    <div class="tab-nav">
+                        <div class="tab-nav__image tab-nav__image-coffee"></div>
+                    </div>
+                    <h4 class="tab-nav__title">Кофе</h4>
+                </li>
+            </ul>
+        </div>
+        <div class="subtabs">
+            <div class="container subtabs__container">
+                <div class="subtabs__nav subtabs-nav">
+                    <button class="btn-reset subtabs-nav__item is-active" data-tab-name="tab-1">Все</button>
+                    <button class="btn-reset subtabs-nav__item" data-tab-name="tab-2">Пончики</button>
+                    <button class="btn-reset subtabs-nav__item" data-tab-name="tab-3">Круассаны</button>
+                    <button class="btn-reset subtabs-nav__item" data-tab-name="tab-4">Пирожки</button>
+                    <button class="btn-reset subtabs-nav__item" data-tab-name="tab-5">Десерты</button>
+                    <button class="btn-reset subtabs-nav__item" data-tab-name="tab-6">Торты</button>
+                    <button class="btn-reset subtabs-nav__item" data-tab-name="tab-7">Булочки</button>
+                </div>
+                <div class="tabs__content">
+                            <div class="tab is-active tab-1 tab-3">
+                                <div class="card">
+                                    <div class="card__image-wrapper image-matcha">
+                                        <button class="image__like btn-reset">
+                                            <div class="like-btn"></div>
+                                        </button>
+                                        <div class="image__labels">
+                                            <div class="image__label image__label-category">Выпечка</div>
+                                            <div class="image__label image__label-time">2 мин.</div>
+                                        </div>
+                                    </div>
+                                    <div class="card__text-area">
+                                        <div class="card__title"><a href="item.html">🥐 Круассан матча</a></div>
+                                        <div class="card__price">85 ₴</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card">
+                                    <div class="card__image-wrapper image-chocolate">
+                                        <button class="image__like btn-reset">
+                                            <div class="like-btn"></div>
+                                        </button>
+                                        <div class="image__labels">
+                                            <div class="image__label image__label-category">Выпечка</div>
+                                            <div class="image__label image__label-time">2 мин.</div>
+                                        </div>
+                                    </div>
+                                    <div class="card__text-area">
+                                        <div class="card__title">🥐 Круассан с шоколадом</div>
+                                        <div class="card__price">85 ₴</div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card__image-wrapper image-rosamalina">
+                                        <button class="image__like btn-reset">
+                                            <div class="like-btn"></div>
+                                        </button>
+                                        <div class="image__labels">
+                                            <div class="image__label image__label-category">Выпечка</div>
+                                            <div class="image__label image__label-time">2 мин.</div>
+                                        </div>
+                                    </div>
+                                    <div class="card__text-area">
+                                        <div class="card__title">🥐 Круассан роза-малина</div>
+                                        <div class="card__price">85 ₴</div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card__image-wrapper image-kokos">
+                                        <button class="image__like btn-reset">
+                                            <div class="like-btn"></div>
+                                        </button>
+                                        <div class="image__labels">
+                                            <div class="image__label image__label-category">Выпечка</div>
+                                            <div class="image__label image__label-time">2 мин.</div>
+                                        </div>
+                                    </div>
+                                    <div class="card__text-area">
+                                        <div class="card__title">🥐 Круассан с кокосом</div>
+                                        <div class="card__price">85 ₴</div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="tab tab-2">
+                                <div class="card">
+                                    <div class="card__image-wrapper image-ponchikKokos">
+                                        <button class="image__like btn-reset">
+                                            <div class="like-btn"></div>
+                                        </button>
+                                        <div class="image__labels">
+                                            <div class="image__label image__label-category">Выпечка</div>
+                                            <div class="image__label image__label-time">2 мин.</div>
+                                        </div>
+                                    </div>
+                                    <div class="card__text-area">
+                                        <div class="card__title">🥐 Пончик с кокосом и шокола..</div>
+                                        <div class="card__price">85 ₴</div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card__image-wrapper image-ponchikMatcha">
+                                        <button class="image__like btn-reset">
+                                            <div class="like-btn"></div>
+                                        </button>
+                                        <div class="image__labels">
+                                            <div class="image__label image__label-category">Выпечка</div>
+                                            <div class="image__label image__label-time">2 мин.</div>
+                                        </div>
+                                    </div>
+                                    <div class="card__text-area">
+                                        <div class="card__title">🥐 Пончик матча</div>
+                                        <div class="card__price">85 ₴</div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card__image-wrapper image-ponchikVishnia">
+                                        <button class="image__like btn-reset">
+                                            <div class="like-btn"></div>
+                                        </button>
+                                        <div class="image__labels">
+                                            <div class="image__label image__label-category">Выпечка</div>
+                                            <div class="image__label image__label-time">2 мин.</div>
+                                        </div>
+                                    </div>
+                                    <div class="card__text-area">
+                                        <div class="card__title">🥐 Пончик с вишней</div>
+                                        <div class="card__price">85 ₴</div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card__image-wrapper image-ponchikCream">
+                                        <button class="image__like btn-reset">
+                                            <div class="like-btn"></div>
+                                        </button>
+                                        <div class="image__labels">
+                                            <div class="image__label image__label-category">Выпечка</div>
+                                            <div class="image__label image__label-time">2 мин.</div>
+                                        </div>
+                                    </div>
+                                    <div class="card__text-area">
+                                        <div class="card__title">🥐 Пончик с кремом</div>
+                                        <div class="card__price">85 ₴</div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card__image-wrapper image-ponchik">
+                                        <button class="image__like btn-reset">
+                                            <div class="like-btn"></div>
+                                        </button>
+                                        <div class="image__labels">
+                                            <div class="image__label image__label-category">Выпечка</div>
+                                            <div class="image__label image__label-time">2 мин.</div>
+                                        </div>
+                                    </div>
+                                    <div class="card__text-area">
+                                        <div class="card__title">🥐 Пончик</div>
+                                        <div class="card__price">85 ₴</div>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

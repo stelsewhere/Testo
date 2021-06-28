@@ -1,0 +1,108 @@
+.item {
+    &__container {
+        padding: 0;
+    }
+}
+.big-image {
+    &__image {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 400px;
+        background-image: url('../img/kruassan_matcha.jpeg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+        
+    }
+
+    &__bottom {
+        position: relative;
+        bottom: -80px;
+        height: 80px;
+        background-color: white;
+        position: relative;
+        box-shadow: 0px 1px 5px rgb(0 0 0 / 10%);
+    }
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    &__title {
+        font-size: 22px;
+        color: black;
+    }
+
+    &__price {
+        font-size: 22px;
+        color: #666;
+    }
+}
+
+.back-btn {
+    margin-top: 8px;
+    width: 24px;
+    height: 24px;
+    background-image: url('../img/left-arrow.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 12px;
+    bottom: -22px;
+    width: 50px;
+    height: 50px;
+    background-color: #24ae43;
+    border-radius: 50%;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+}
+
+.plus-btn {
+    position: relative;
+    width: 30px;
+    height: 30px;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: white;
+    }
+
+    &::before {
+        left:50%;
+        top:4px;
+        bottom:4px;
+        width:4px;
+        transform:translateX(-50%);
+    }
+
+    &::after {
+        top:50%;
+        left:4px;
+        right:4px;
+        height:4px;
+        transform:translateY(-50%);
+      }
+}
+.descr {
+    padding: 120px 16px 60px;
+    line-height: 130%;
+}

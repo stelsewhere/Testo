@@ -1,0 +1,78 @@
+.tabs-nav {
+    display: flex;
+    align-items: center;
+    background-color: hsla(0,0%,97.3%,.7);
+    padding: 8px 12px 6px;
+    overflow-x: auto;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 12px;
+
+       
+    }
+}
+.is-active {
+    .tab-nav {
+        width: 64px;
+        background-color: #f9d953;
+
+        &__image {
+            width: 48px;
+            height: 48px;
+        }
+
+        &__title {
+            font-size: 12px;
+            color: black;
+        }
+    }
+}
+
+.tab-nav {
+    width: 64px;
+    height: 64px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2px;
+
+    &__image {
+        width: 40px;
+        height: 40px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &-pop {
+            background-image: url('../img/popular.png');
+        }
+        &-fav {
+            background-image: url('../img/heart.png');
+        }
+        &-gifts {
+            background-image: url('../img/gift.png');
+        }
+        &-breakf {
+            background-image: url('../img/breakfast.png');
+        }
+        &-bakery {
+            background-image: url('../img/bakery.png');
+        }
+        &-salads {
+            background-image: url('../img/salad.b04ea214.png');
+        }
+        &-coffee {
+            background-image: url('../img/hot-beverage_2615.2223457d.png');
+        }
+    }
+
+    &__title {
+        font-size: 11px;
+        color: #aaa;
+    }
+   
+}
