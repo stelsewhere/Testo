@@ -34,7 +34,7 @@
         }
     }
 }
-@keyframes move {
+@-webkit-keyframes move {
     0% {
       transform: translateX(50px); opacity: 0;
     }

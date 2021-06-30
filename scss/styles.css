@@ -244,15 +244,6 @@ a {
     opacity: 100%;
   }
 }
-
-@keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
 .is-active .tab-nav {
   background-color: #f9d953;
   -webkit-transition: background-color 2s linear 0;
@@ -372,19 +363,6 @@ a {
 }
 
 @-webkit-keyframes scale {
-  0% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 100%;
-  }
-}
-
-@keyframes scale {
   0% {
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
@@ -525,17 +503,6 @@ a {
 }
 
 @-webkit-keyframes move {
-  0% {
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-
-@keyframes move {
   0% {
     -webkit-transform: translateX(50px);
             transform: translateX(50px);
