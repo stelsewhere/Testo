@@ -10,6 +10,11 @@
     border-radius: 10px;
     background-color: white;
     box-shadow: (0 2px 3px rgba(0,0,0,.1));
+    transform: scale(1);
+    opacity: 100%;
+    animation-name: scale;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
 
     &__image-wrapper {
         position: relative;
@@ -38,6 +43,16 @@
     &__price {
         font-size: 22px;
     }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0.5); opacity: 0;
+  }
+
+  100% {
+    transform: scale(1); opacity: 100%;
+  }
 }
 
 .image-matcha {

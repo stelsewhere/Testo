@@ -212,6 +212,15 @@ a {
   background-color: rgba(248, 248, 248, 0.7);
   padding: 8px 12px 6px;
   overflow-x: auto;
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 50ms;
+          animation-delay: 50ms;
+  opacity: 100%;
 }
 .tabs-nav__item {
   display: -webkit-box;
@@ -227,9 +236,27 @@ a {
   margin-right: 12px;
 }
 
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 .is-active .tab-nav {
-  width: 64px;
   background-color: #f9d953;
+  -webkit-transition: background-color 2s linear 0;
+  transition: background-color 2s linear 0;
 }
 .is-active .tab-nav__image {
   width: 48px;
@@ -301,6 +328,15 @@ a {
   background-color: white;
   -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 100%;
+  -webkit-animation-name: scale;
+          animation-name: scale;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 .card__image-wrapper {
   position: relative;
@@ -335,6 +371,31 @@ a {
   font-size: 22px;
 }
 
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 100%;
+  }
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 100%;
+  }
+}
 .image-matcha {
   background-image: url("../img/matcha.jpeg");
 }
@@ -428,8 +489,62 @@ a {
   border: 1px solid #cdcdcd;
   border-radius: 6px;
   font-size: 16px;
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 100%;
+}
+.subtabs-nav__item--2 {
+  -webkit-animation-delay: 10ms;
+          animation-delay: 10ms;
+}
+.subtabs-nav__item--3 {
+  -webkit-animation-delay: 20ms;
+          animation-delay: 20ms;
+}
+.subtabs-nav__item--4 {
+  -webkit-animation-delay: 30ms;
+          animation-delay: 30ms;
+}
+.subtabs-nav__item--5 {
+  -webkit-animation-delay: 40ms;
+          animation-delay: 40ms;
+}
+.subtabs-nav__item--6 {
+  -webkit-animation-delay: 50ms;
+          animation-delay: 50ms;
+}
+.subtabs-nav__item--7 {
+  -webkit-animation-delay: 60ms;
+          animation-delay: 60ms;
 }
 
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 .subtabs-nav__item.is-active {
   background-color: #f9d953;
   border: 1px solid #f9d953;

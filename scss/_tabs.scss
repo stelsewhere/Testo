@@ -8,6 +8,39 @@
         border: 1px solid #cdcdcd;
         border-radius: 6px;
         font-size: 16px;
+        animation-name: move;
+        animation-duration: 0.4s;
+        animation-timing-function: ease-in-out;
+        transform: translateX(0);
+        opacity: 100%;
+
+        &--2 {
+            animation-delay: 10ms;
+        }
+        &--3 {
+            animation-delay: 20ms;
+        }
+        &--4 {
+            animation-delay: 30ms;
+        }
+        &--5 {
+            animation-delay: 40ms;
+        }
+        &--6 {
+            animation-delay: 50ms;
+        }
+        &--7 {
+            animation-delay: 60ms;
+        }
+    }
+}
+@keyframes move {
+    0% {
+      transform: translateX(50px); opacity: 0;
+    }
+  
+    100% {
+     opacity: 100%;
     }
 }
 
@@ -18,7 +51,9 @@
 
 .tab {
     display: none;
+
 }
+
 .tab.is-active {
     display: block;
 }
